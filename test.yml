@@ -22,17 +22,12 @@ spec:
   ports:
     - port: 80
 
-
-# ---
-
-# apiVersion: argoproj.io/v1alpha1
-# kind: AppProject
-# metadata:
-#   name: default
-# spec:
-#   sourceRepos: []
-#   sourceNamespaces: []
-#   destinations: []
-#   namespaceResourceBlacklist:
-#   - group: '*'
-#     kind: '*'
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysecret
+  namespace: default
+type: Opaque
+data:
+  password: dGVzdAo=
