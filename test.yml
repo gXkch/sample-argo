@@ -29,4 +29,4 @@ metadata:
   name: mysecret
 type: Opaque
 data:
-  password: dGVzdAo=
+  password: dGVzdAo
